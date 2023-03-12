@@ -4,4 +4,8 @@
 
 layout: home
 ---
+If you're looking at this page, let me apologise.
 
+My landing page is currently very unfinished, in the meantime you can check out my posts, economics notes or poorly written description of myself.
+
+If you want to stay on this page, enjoy these gifs of attempted visualisations of 4D shapes.
