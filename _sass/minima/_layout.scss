@@ -24,6 +24,14 @@
   }
 }
 
+.site-title ::before {
+  content: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Hammer_and_sickle_red_on_transparent.svg");
+  display: inline-block;
+  position: relative;
+  width: 37px;
+  top: 5px;
+}
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;

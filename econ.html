@@ -1,0 +1,13 @@
+---
+permalink: /econ.html
+layout: default
+---
+{% assign econ_notes = site.static_files | where: "econnote", true %}
+
+{% for note in econ_notes %}
+  {% capture link %}{{  site.url }}/assets/econnotes/{{ note.name | url_encode }}{% endcapture %}
+  <a href= {{ link }} >{{ note.name }}</a>
+  <br>
+{% endfor %}
+
+
