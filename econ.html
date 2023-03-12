@@ -6,7 +6,7 @@ layout: default
 
 {% for note in econ_notes %}
   {% capture link %}{{  site.url }}/assets/econnotes/{{ note.name | url_encode }}{% endcapture %}
-  <a href= {{ link }} >{{ note.name }}</a>
+  <a href= {{ link }} >{{ note.name | replace: "_", " " }}</a>
   <br>
 {% endfor %}
 
