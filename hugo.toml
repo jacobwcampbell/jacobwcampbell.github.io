@@ -1,0 +1,10 @@
+baseURL = 'https://jacobwcampbell.github.io/'
+languageCode = 'en-gb'
+title = 'Jacob Campbell'
+theme = 'skeleton'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+
