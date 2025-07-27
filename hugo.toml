@@ -1,10 +1,42 @@
 baseURL = 'https://jacobwcampbell.github.io/'
 languageCode = 'en-gb'
 title = 'Jacob Campbell'
-theme = 'skeleton'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+[params]
+  math = true
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
 
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
 
